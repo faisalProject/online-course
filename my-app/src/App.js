@@ -4,6 +4,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // bootstrap icons
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
+// fontawesome
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+
 import './main.css';
 import Header from './component/Header';
 import Home from './pages/Home';
