@@ -9,6 +9,10 @@ const Mobile = () => {
     return(
         <div className="mobile">
             <div className="container">
+                <div className="button-container">
+                    <button type="submit" className="btn btn-primary">Masuk</button>
+                    <button type="submit" className="btn btn-primary">Daftar</button>
+                </div>
                 <Link to="/" className="anchor">Kursus</Link>
                 <div className="a-2" onClick={dropdownMobile}>
                     <div className="a-3">
