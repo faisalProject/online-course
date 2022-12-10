@@ -68,6 +68,102 @@ const Home = () => {
                         <div className="card">
                             <img src={intel} alt="" />
                         </div>
+                        <div className="card">
+                            <img src={google} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={microsoft} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={aws} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={ibm} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={indosat} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={kemenparekraf} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={lintasarta} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={line} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={alcatel} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={samsung} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={ericsson} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={telkomtelstra} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={lenovo} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={intel} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={google} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={microsoft} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={aws} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={ibm} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={indosat} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={kemenparekraf} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={lintasarta} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={line} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={alcatel} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={samsung} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={ericsson} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={telkomtelstra} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={lenovo} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={intel} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={ericsson} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={telkomtelstra} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={lenovo} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={intel} alt="" />
+                        </div>
                     </div>
                     <div className="item"></div>
                 </div>
