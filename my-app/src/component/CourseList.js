@@ -1,0 +1,67 @@
+import android from '../images/homepage-lp-android-developer-3.jpg';
+import backend from '../images/homepage-lp-back-end-developer-2.jpg';
+import frontend from '../images/homepage-lp-front-end-web-developer-2.jpg';
+import ios from '../images/homepage-lp-ios-developer-2.jpg';
+import ml from '../images/homepage-lp-machine-learning-developer-2.jpg';
+import Slider from 'react-slick';
+
+const CourseList = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    };
+    return(
+        <>
+            <div className='slider-container'>
+            <Slider {...settings}>
+                <div className='card'>
+                    <img src={android} alt="" />
+                </div>
+                <div className='card'>
+                    <img src={backend} alt="" />
+                </div>
+                <div className='card'>
+                    <img src={frontend} alt="" />
+                </div>
+                <div className='card'>
+                    <img src={ios} alt="" />
+                </div>
+                <div className='card'>
+                    <img src={ml} alt="" />
+                </div>
+            </Slider>
+            </div>
+        </>
+    )
+}
+
+export default CourseList;
