@@ -660,6 +660,13 @@ nav > .container > .nav-right > .hamburger > span {
     background-color: #f5f5f5;
 }
 
+/* signin-contents */
+.signin-contents {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid red;
+}
+
 /* footer */
 footer {
     width: 100%;
