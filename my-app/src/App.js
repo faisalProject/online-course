@@ -17,6 +17,7 @@ import './main.css';
 import Header from './component/Header';
 import Home from './pages/Home';
 import Mobile from './component/Mobile';
+import Footer from './component/Footer';
 
 // react-router-dom
 import {BrowserRouter, Routes, Route} from "react-router-dom";
@@ -31,6 +32,7 @@ function App() {
           <Route path='/' element={<Home />}></Route>
         </Routes>
         <Mobile />
+        <Footer />
       </BrowserRouter>
     </>
 
