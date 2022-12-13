@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
 
 const theme = () => {
     document.getElementsByClassName('circle')[0].classList.toggle('active');
@@ -10,9 +9,8 @@ const mobileNav = () => {
 }
 
 const siginPopup = () => {
-    Swal.fire({
-        html: '<div class="signin-contents"></div>'
-    })
+    document.getElementsByClassName('signin-popup-contents')[0].classList.add('active');
+    document.querySelector('body').classList.add('active');
 }
 
 const Header = () => {
@@ -42,7 +40,7 @@ const Header = () => {
                 </div>
                 <div className="nav-right">
                     <div className="button-container">
-                        <button type="submit" className="btn btn-primary" onClick={siginPopup}>Masuk</button>
+                        <button type="submit" className="btn btn-primary signin-button" onClick={siginPopup}>Masuk</button>
                         <button type="submit" className="btn btn-primary">Daftar</button>
                     </div>
                     <div className="theme-container">

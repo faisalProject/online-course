@@ -17,6 +17,7 @@ import './main.css';
 import Header from './component/Header';
 import Home from './pages/Home';
 import Mobile from './component/Mobile';
+import SigninPopup from './component/SigninPopup';
 import Footer from './component/Footer';
 
 // react-router-dom
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}></Route>
         </Routes>
+        <SigninPopup />
         <Mobile />
         <Footer />
       </BrowserRouter>

@@ -661,10 +661,234 @@ nav > .container > .nav-right > .hamburger > span {
 }
 
 /* signin-contents */
-.signin-contents {
+.signin-popup-contents {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* visibility: hidden; */
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    overflow-y: auto;
+}
+
+.signin-popup-contents.active {
+    transform: scale(1);
+}
+
+.swal2-styled.swal2-confirm {
+    box-shadow: none !important;
+}
+
+body.active {
+    overflow-y: hidden;
+}
+
+.signin-popup-contents.active > .signin-container {
+    width: 400px;
+    border: 1px solid #d8d8d8;
+    background-color: #fff;
+    border-radius: 5px;
+    animation: fadeIn .4s ease 1 alternate forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-popup-contents.active > .signin-container > .top {
     width: 100%;
-    min-height: 100px;
-    border: 1px solid red;
+    min-height: 40px;
+    padding: 10px 20px;
+    display: flex;
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signin-popup-contents.active > .signin-container > .top > h5 {
+    color: #2D3E50;
+    margin: 0 !important;
+    font-size: 16px;
+}
+
+.signin-popup-contents.active > .signin-container > .top > .close {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    /* border: 1px solid #333; */
+    padding: 5px 0;
+}
+
+.signin-popup-contents.active > .signin-container > .top > .close > span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: #2D3E50;
+    border-radius: 2px;
+}
+
+.signin-popup-contents.active > .signin-container > .top > .close > span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.signin-popup-contents.active > .signin-container > .top > .close > span:nth-child(2) {
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.signin-popup-contents.active > .signin-container > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.signin-popup-contents.active > .signin-container > form > input {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.signin-popup-contents.active > .signin-container > form > .password-container {
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.signin-popup-contents.active > .signin-container > form > .password-container input {
+    flex: 1;
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.signin-popup-contents.active > .signin-container > form > .password-container > .show {
+    width: 40px;
+    border: 1px solid #ced4da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.signin-popup-contents.active > .signin-container > form > .password-container > .show > .bi-eye-slash,
+.signin-popup-contents.active > .signin-container > form > .password-container > .show.active > .bi-eye {
+    color: #2D3E50;
+    display: block;
+}
+
+.signin-popup-contents.active > .signin-container > form > .password-container > .show.active > .bi-eye-slash,
+.signin-popup-contents.active > .signin-container > form > .password-container > .show > .bi-eye {
+    display: none;
+}
+
+.signin-popup-contents.active > .signin-container > form > .forget-password,
+.signin-popup-contents.active > .signin-container > form > .or,
+.signin-popup-contents.active > .signin-container > form > .register-container {
+    width: 100%;
+    /* border: 1px solid #333; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.signin-popup-contents.active > .signin-container > form > .or {
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #696969;
+}
+
+.signin-popup-contents.active > .signin-container > form > .register-container {
+    justify-content: left;
+}
+
+.signin-popup-contents.active > .signin-container > form > .forget-password .anchor {
+    font-size: 14px;
+    color: #1A5ACE;
+    text-decoration: none;
+}
+
+.signin-popup-contents.active > .signin-container > form > .btn-primary {
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D3E50;
+    border: 1px solid #2D3E50;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.signin-popup-contents.active > .signin-container > form > .btn-primary:hover {
+    background-color: #293747;
+}
+
+.signin-popup-contents.active > .signin-container > form > .or > span {
+    display: block;
+    flex: 1;
+    height: .1px !important;
+    background-color: #d8d8d8;
+    margin: 0 !important;
+}
+
+.signin-popup-contents.active > .signin-container > form > .google {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.signin-popup-contents.active > .signin-container > form > .google:hover {
+    background-color: #f7f7f7;
+}
+
+.signin-popup-contents.active > .signin-container > form > .google > img {
+    height: 70%;
+}
+
+.signin-popup-contents.active > .signin-container > form > .google > h5 {
+    margin: 0 !important;
+    font-size: 14px;
+    color: #2D3E50;
+}
+
+.signin-popup-contents.active > .signin-container > form > .register-container > span {
+    color: #2D3E50;
+    font-size: 14px;
+}
+
+.signin-popup-contents.active > .signin-container > form > .register-container > span > .anchor {
+    text-decoration: none;
+    color: #1A5ACE;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(.7);
+    } 50% {
+        transform: scale(1);
+    } 70% {
+        transform: scale(.9);
+    } 100% {
+        transform: scale(1);
+    }
 }
 
 /* footer */
@@ -738,7 +962,8 @@ footer > .container > .item:nth-child(3) > .box > .anchor {
     nav > .container > .nav-left > .anchor:not(:first-child),
     nav > .container > .nav-left > .a-1,
     nav > .container > .nav-right > .button-container,
-    .jumbotron > .container> .item:nth-child(3) {
+    .jumbotron > .container> .item:nth-child(3),
+    .signin-popup-contents {
         display: none;
     }
 

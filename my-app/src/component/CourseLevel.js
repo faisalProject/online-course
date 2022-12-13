@@ -8,7 +8,8 @@ const warning = () => {
   Swal.fire({
     icon: 'warning',
     title: 'Oops...',
-    text: 'Anda harus masuk terlebih dahulu'
+    text: 'Anda harus masuk terlebih dahulu',
+    confirmButtonColor: '#2D3E50',
   })
 }
 
