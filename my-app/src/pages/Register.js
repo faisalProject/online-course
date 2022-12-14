@@ -27,6 +27,10 @@ const Register = () => {
                                 <i className="bi bi-eye"></i>
                             </div>
                         </div>
+                        <div className="desc">
+                            <p>Gunakan minimal 8 karakter dengan kombinasi huruf dan angka</p>
+                        </div>
+                        <button type="submit" className="btn btn-primary">Daftar</button>
                     </form>
                 </div>
             </div>
