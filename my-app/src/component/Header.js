@@ -41,7 +41,7 @@ const Header = () => {
                 <div className="nav-right">
                     <div className="button-container">
                         <button type="submit" className="btn btn-primary signin-button" onClick={siginPopup}>Masuk</button>
-                        <button type="submit" className="btn btn-primary">Daftar</button>
+                        <Link to='/register' className='btn btn-primary'>Daftar</Link>
                     </div>
                     <div className="theme-container">
                         <div className="circle" onClick={theme}>

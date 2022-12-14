@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import goggle from '../images/google.png';
+import Swal from "sweetalert2";
 
 const closePopup = () => {
     document.getElementsByClassName('signin-popup-contents')[0].classList.remove('active');
@@ -14,6 +15,15 @@ const show = () => {
     } else {
         x.type = 'password'
     }
+}
+
+const successSignin = () => {
+    Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'Berhasil Masuk',
+        confirmButtonColor: '#2D3E50'
+    });
 }
 
 const SigninPopup = () => {
@@ -39,7 +49,7 @@ const SigninPopup = () => {
                     <div className="forget-password">
                         <Link to='/' className="anchor">Lupa Password?</Link>
                     </div>
-                    <button type="submit" className="btn btn-primary">Masuk</button>
+                    <button type="submit" className="btn btn-primary" onClick={successSignin}>Masuk</button>
                     <div className="or">
                         <span></span>
                         atau
@@ -50,7 +60,7 @@ const SigninPopup = () => {
                         <h5>Masuk dengan Google</h5>
                     </Link>
                     <div className="register-container">
-                        <span>Sudah mempunyai akun? <Link to='/' className="anchor">Daftar</Link></span>
+                        <span>Sudah mempunyai akun? <Link to='/register' className="anchor" onClick={closePopup}>Daftar</Link></span>
                     </div>
                 </form>
             </div>

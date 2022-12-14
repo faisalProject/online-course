@@ -10,8 +10,8 @@ const Mobile = () => {
         <div className="mobile">
             <div className="container">
                 <div className="button-container">
-                    <button type="submit" className="btn btn-primary">Masuk</button>
-                    <button type="submit" className="btn btn-primary">Daftar</button>
+                    <Link to='/' className="btn btn-primary">Masuk</Link>
+                    <Link to='/register' className="btn btn-primary">Daftar</Link>
                 </div>
                 <Link to="/" className="anchor">Kursus</Link>
                 <div className="a-2" onClick={dropdownMobile}>

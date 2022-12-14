@@ -18,6 +18,7 @@ import Header from './component/Header';
 import Home from './pages/Home';
 import Mobile from './component/Mobile';
 import SigninPopup from './component/SigninPopup';
+import Register from './pages/Register';
 import Footer from './component/Footer';
 
 // react-router-dom
@@ -31,6 +32,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />}></Route>
+          <Route path='/register' element={<Register />}></Route>
         </Routes>
         <SigninPopup />
         <Mobile />
