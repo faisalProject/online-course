@@ -19,6 +19,7 @@ import Home from './pages/Home';
 import Mobile from './component/Mobile';
 import SigninPopup from './component/SigninPopup';
 import Register from './pages/Register';
+import Signin from './pages/Signin';
 import Footer from './component/Footer';
 
 // react-router-dom
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/register' element={<Register />}></Route>
+          <Route path='/signin' element={<Signin />}></Route>
         </Routes>
         <SigninPopup />
         <Mobile />

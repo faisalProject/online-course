@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import goggle from '../images/google.png';
 
 const show = () => {
-    document.getElementsByClassName('show-2')[0].classList.toggle('active');
-    const x = document.getElementsByClassName('password-type')[0];
-
+    document.getElementsByClassName('show-3')[0].classList.toggle('active');
+    const x = document.getElementById('pass-2');
     if(x.type === 'password') {
         x.type = 'text'
     } else {
@@ -12,25 +11,19 @@ const show = () => {
     }
 }
 
-const siginPopup = () => {
-    document.getElementsByClassName('signin-popup-contents')[0].classList.add('active');
-    document.querySelector('body').classList.add('active');
-}
-
-const Register = () => {
+const Signin = () => {
     return(
-        <div className="register-contents">
+        <div className="signin-contents">
             <div className="container">
-                <div className="register">
+                <div className="signin">
                     <div className="top">
-                        <h5>Daftar</h5>
+                        <h5>Masuk</h5>
                     </div>
                     <form>
-                        <input type="text" className="form-control" placeholder="nama lengkap" /> 
                         <input type="email" className="form-control" placeholder="email" />
                         <div className="password-container">
-                            <input type="password" className="form-control password-type" placeholder="password" />
-                            <div className="show-2" onClick={show}>
+                            <input type="password" className="form-control" id="pass-2" placeholder="password" />
+                            <div className="show-3" onClick={show}>
                                 <i className="bi bi-eye-slash"></i>
                                 <i className="bi bi-eye"></i>
                             </div>
@@ -49,8 +42,7 @@ const Register = () => {
                             <h5>Masuk dengan Google</h5>
                         </Link>
                         <div className="signin-container">
-                            <span>Sudah mempunyai akun? <span className="anchor" onClick={siginPopup}>Masuk</span></span>
-                            <span>Sudah mempunyai akun? <Link to='/signin' className="anchor">Masuk</Link></span>
+                            <span>Belum mempunyai akun? <Link to='/register' className="anchor">Daftar</Link></span>
                         </div>
                     </form>
                 </div>
@@ -59,4 +51,4 @@ const Register = () => {
     )
 }
 
-export default Register;
+export default Signin;

@@ -60,7 +60,7 @@ const SigninPopup = () => {
                         <h5>Masuk dengan Google</h5>
                     </Link>
                     <div className="register-container">
-                        <span>Sudah mempunyai akun? <Link to='/register' className="anchor" onClick={closePopup}>Daftar</Link></span>
+                        <span>Belum mempunyai akun? <Link to='/register' className="anchor" onClick={closePopup}>Daftar</Link></span>
                     </div>
                 </form>
             </div>

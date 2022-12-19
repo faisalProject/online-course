@@ -10,7 +10,7 @@ const Mobile = () => {
         <div className="mobile">
             <div className="container">
                 <div className="button-container">
-                    <Link to='/' className="btn btn-primary">Masuk</Link>
+                    <Link to='/signin' className="btn btn-primary">Masuk</Link>
                     <Link to='/register' className="btn btn-primary">Daftar</Link>
                 </div>
                 <Link to="/" className="anchor">Kursus</Link>
