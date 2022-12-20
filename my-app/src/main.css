@@ -78,6 +78,7 @@ nav > .container > .nav-left > .a-1 > .anchor {
     color: #2D3E50;
     text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
 }
 
 nav > .container > .nav-left > .a-1 > .anchor {
@@ -501,11 +502,11 @@ nav > .container > .nav-right > .hamburger > span {
 .landing-page-contents > .container > .pagination-container {
     width: 100%;
     display: flex;
+    /* border: 1px solid red; */
     padding: 10px;
     justify-content: right;
     align-items: center;
     gap: 5px;
-    /* border: 1px solid #333; */
 }
 
 .landing-page-contents > .container > .pagination-container > button {
@@ -532,7 +533,7 @@ nav > .container > .nav-right > .hamburger > span {
 
 .landing-page-contents > .container > .course-title {
     width: 100%;
-    padding:  50px 10px 10px;
+    padding:  60px 10px 10px;
     /* border: 1px solid #333; */
     display: flex;
     flex-direction: column;

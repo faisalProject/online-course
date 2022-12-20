@@ -45,7 +45,7 @@ const CourseList = () => {
   };
   return(
     <>
-      <div className='pagination-container'>
+      <div className='pagination-container' id='course'>
         <button onClick={() => slider.current.slickPrev()}><i className="bi bi-caret-left"></i></button>
         <button onClick={() => slider.current.slickNext()}><i className="bi bi-caret-right"></i></button>
       </div>
