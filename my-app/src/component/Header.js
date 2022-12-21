@@ -13,27 +13,19 @@ const siginPopup = () => {
     document.querySelector('body').classList.add('active');
 }
 
-const pageScroll = (e) => {
-    const scroll = document.getElementsByClassName('page-scroll')[0];
-    const href = scroll.getAttribute('href');
-    const hrefElement = document.querySelector(href);
-    const offset = hrefElement.offsetTop - 70;
-    document.querySelector('html', 'body').scrollTop = offset;
-    e.preventDefault()
-}
-
 const Header = () => {
     return (
         <nav>
             <div className="container">
                 <div className="nav-left">
                     <Link to="/" className="anchor">Beranda</Link>
-                    <a href="#course" className="anchor page-scroll" onClick={pageScroll}>Kursus</a>
+                    <Link to='/' className="anchor">Kursus</Link>
+                    {/* <a href="#course" className="anchor page-scroll" onClick={pageScroll}>Kursus</a> */}
                     <div className="a-1">
                         <span className="anchor">Langganan</span>
                         <ul className="dropdown">
                             <li>
-                                <Link to="/" className="anchor">
+                                <Link to="/SubscriptionFeesPage" className="anchor">
                                     <i className="bi bi-credit-card-2-back"></i>
                                     Biaya Langganan
                                 </Link>

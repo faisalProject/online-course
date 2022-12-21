@@ -23,7 +23,7 @@ const Mobile = () => {
                     </div>
                     <ul className="menu-container">
                         <li>
-                            <Link to="/" className="anchor">
+                            <Link to="/SubscriptionFeesPage" className="anchor">
                                 <i className="bi bi-credit-card-2-back"></i>
                                 Biaya Langganan 
                             </Link>
