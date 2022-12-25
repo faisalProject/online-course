@@ -17,13 +17,14 @@ const show = () => {
     }
 }
 
-const successSignin = () => {
+const successSignin = (e) => {
     Swal.fire({
         icon: 'success',
         title: 'Success',
         text: 'Berhasil Masuk',
         confirmButtonColor: '#2D3E50'
     });
+    e.preventDefault();
 }
 
 const SigninPopup = () => {

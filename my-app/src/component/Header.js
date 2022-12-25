@@ -31,7 +31,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" className="anchor">
+                                <Link to="/TokenActivationPage" className="anchor">
                                     <i className="bi bi-credit-card-2-front"></i>
                                     Aktivasi Token
                                 </Link>

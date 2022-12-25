@@ -1,4 +1,5 @@
 import Swal from "sweetalert2";
+import Sponsor from "../component/Sponsor";
 
 const subscribeToAlerts = () => {
     Swal.fire({
@@ -53,6 +54,12 @@ const SubscriptionFeesPage = () => {
                         <button type="submit" className="btn btn-primary" onClick={subscribeToAlerts}>Pilih paket</button>
                     </div>
                 </div>
+            </div>
+            <div className="container">
+                <div className="sponsors-title">
+                    <h5>Telah dipercayai Oleh</h5>
+                </div>
+                <Sponsor />
             </div>
         </div>
     )

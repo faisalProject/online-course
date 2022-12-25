@@ -21,6 +21,7 @@ import SigninPopup from './component/SigninPopup';
 import Register from './pages/Register';
 import Signin from './pages/Signin';
 import SubscriptionFeesPage from './pages/SubscriptionFeesPage';
+import TokenActivationPage from './pages/TokenActivationPage';
 import Footer from './component/Footer';
 
 // react-router-dom
@@ -37,6 +38,7 @@ function App() {
           <Route path='/register' element={<Register />}></Route>
           <Route path='/signin' element={<Signin />}></Route>
           <Route path='/SubscriptionFeesPage' element={<SubscriptionFeesPage />}></Route>
+          <Route path='/TokenActivationPage' element={<TokenActivationPage />}></Route>
         </Routes>
         <SigninPopup />
         <Mobile />
