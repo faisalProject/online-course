@@ -22,7 +22,7 @@ const successSignin = (e) => {
         icon: 'success',
         title: 'Success',
         text: 'Berhasil Masuk',
-        confirmButtonColor: '#2D3E50'
+        showConfirmButton: false
     });
     e.preventDefault();
 }
